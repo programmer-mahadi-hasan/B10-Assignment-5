@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- daisyUI CDN Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- css style  -->
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="lexend-font">
+    <!-- navbar starts -->
+    <header>
+        <nav class="bg-orange-50 bg-opacity-40 flex justify-around items-center pt-6 pb-6">
+            <div>
+                <a class="btn btn-accent text-xs lg:text-xl font-semibold px-8 mr-2" href="index.html">Home</a>
+            </div>
+            <div class="flex items-center justify-center gap-4">
+                <img src="assets/logo.png" alt="">
+                <h2 class="text-xs lg:text-xl font-bold">Donate Bangladesh</h2>
+            </div>
+            <div class="flex items-center justify-center gap-3">
+                <img src="assets/coin.png" alt="">
+                <p class="text-xs lg:text-xl font-bold"><span id="account-balance">75600</span> BDT</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- faq section  -->
+         <section class="w-4/5 mx-auto mt-10 space-y-6">
+            <div class="flex items-center gap-x-2">
+                <h1 class="text-3xl font-bold">Important FAQ</h1>
+                <img src="assets/help.png" alt="">
+            </div>
+            <div class="join join-vertical w-full" >
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                  <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects, making it possible for programming languages to interact with the page.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                  <div class="collapse-content">
+                    <p>You can select an element from the DOM using methods like <code>document.getElementById()</code>, <code>document.getElementsByClassName()</code>, <code>document.getElementsByTagName()</code>, <code>document.querySelector()</code>, and <code>document.querySelectorAll()</code>. These methods allow you to target elements based on their ID, class, tag, or CSS selectors.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium"> What is event delegation in the context of the DOM, and why is it useful?</div>
+                  <div class="collapse-content">
+                    <p>Event delegation is a technique where a single event listener is added to a parent element to manage events for multiple child elements. This is useful because it improves performance by reducing the number of event listeners needed and allows for dynamic content handling, as new child elements added to the parent will automatically be managed by the event listener.</p>
+                  </div>
+                </div>
+              </div>
+         </section>
+    </main>
+</body>
+
+</html>
