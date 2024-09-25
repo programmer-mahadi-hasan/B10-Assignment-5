@@ -18,6 +18,8 @@ document.getElementById("donation-btn").addEventListener('click', function(event
     changeBtnColor(event.target, historyBtn);
     const historySection = document.getElementById("history-section");
     historySection.classList.add('hidden');
+    const footer = document.getElementById("footer");
+    footer.classList.remove('hidden');
 })
 
 
