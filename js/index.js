@@ -31,7 +31,7 @@ document.getElementById("noakhali-donate-btn").addEventListener('click',function
     const donateText = document.createElement('span');
     donateText.innerText = 'Taka is Donated for Flood at Noakhali, Bangladesh'
     donateCalcAndAddHistory(noakhaliInput,accountBalanceNumber,noakhaliBalanceNumber,"noakhali-donate-balance","account-balance",donateText);
-
+    document.getElementById("noakhali-amount-input").value = '';
 })
 
 //feni donate btn
@@ -44,6 +44,7 @@ document.getElementById("feni-donate-btn").addEventListener('click',function () 
     const donateText = document.createElement('span');
     donateText.innerText = 'Taka is Donated for Flood Relief in Feni,Bangladesh'
     donateCalcAndAddHistory(feniInput,accountBalanceNumber,feniBalanceNumber,"feni-balance","account-balance",donateText);
+    document.getElementById("feni-input").value = '';
 
 })
 
@@ -57,5 +58,6 @@ document.getElementById("quota-donation-btn").addEventListener('click',function 
     const donateText = document.createElement('span');
     donateText.innerText = 'Taka is Donated for Aid for Injured in the Quota Movement'
     donateCalcAndAddHistory(quotaInput,accountBalanceNumber,quotaBalanceNumber,"quota-balance","account-balance",donateText);
+    document.getElementById("quota-input").value = '';
 
 })
