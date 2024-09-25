@@ -7,6 +7,8 @@ document.getElementById("history-btn").addEventListener('click', function(event)
     changeBtnColor(event.target,donationBtn);
     const historySection = document.getElementById("history-section");
     historySection.classList.remove('hidden');
+    const footer = document.getElementById("footer");
+    footer.classList.add('hidden');
 })
 
 document.getElementById("donation-btn").addEventListener('click', function(event){
