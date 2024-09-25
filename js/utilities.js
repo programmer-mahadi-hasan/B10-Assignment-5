@@ -16,7 +16,7 @@ function donateCalcAndAddHistory(input, accountBalance, donationBalance, id1, id
         return;
     }
 
-    const inputNumber = parseFloat(input);
+    const inputNumber = Number(input);
 
     if (isNaN(inputNumber)) {
         alert('Invalid Input! Try again.');

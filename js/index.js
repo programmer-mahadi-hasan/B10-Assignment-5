@@ -24,9 +24,9 @@ document.getElementById("donation-btn").addEventListener('click', function(event
 //noakhali donate btn
 document.getElementById("noakhali-donate-btn").addEventListener('click',function () {
     const accountBalance = document.getElementById("account-balance").innerText;
-    const accountBalanceNumber = parseFloat(accountBalance);
+    const accountBalanceNumber = Number(accountBalance);
     const noakhaliBalance = document.getElementById("noakhali-donate-balance").innerText;
-    const noakhaliBalanceNumber = parseFloat(noakhaliBalance);
+    const noakhaliBalanceNumber = Number(noakhaliBalance);
     const noakhaliInput = document.getElementById("noakhali-amount-input").value;
     const donateText = document.createElement('span');
     donateText.innerText = 'Taka is Donated for Flood at Noakhali, Bangladesh'
@@ -37,9 +37,9 @@ document.getElementById("noakhali-donate-btn").addEventListener('click',function
 //feni donate btn
 document.getElementById("feni-donate-btn").addEventListener('click',function () {
     const accountBalance = document.getElementById("account-balance").innerText;
-    const accountBalanceNumber = parseFloat(accountBalance);
+    const accountBalanceNumber = Number(accountBalance);
     const feniBalance = document.getElementById("feni-balance").innerText;
-    const feniBalanceNumber = parseFloat(feniBalance);
+    const feniBalanceNumber = Number(feniBalance);
     const feniInput = document.getElementById("feni-input").value;
     const donateText = document.createElement('span');
     donateText.innerText = 'Taka is Donated for Flood Relief in Feni,Bangladesh'
@@ -51,9 +51,9 @@ document.getElementById("feni-donate-btn").addEventListener('click',function () 
 // injured quota btn
 document.getElementById("quota-donation-btn").addEventListener('click',function () {
     const accountBalance = document.getElementById("account-balance").innerText;
-    const accountBalanceNumber = parseFloat(accountBalance);
+    const accountBalanceNumber = Number(accountBalance);
     const quotaBalance = document.getElementById("quota-balance").innerText;
-    const quotaBalanceNumber = parseFloat(quotaBalance);
+    const quotaBalanceNumber = Number(quotaBalance);
     const quotaInput = document.getElementById("quota-input").value;
     const donateText = document.createElement('span');
     donateText.innerText = 'Taka is Donated for Aid for Injured in the Quota Movement'
