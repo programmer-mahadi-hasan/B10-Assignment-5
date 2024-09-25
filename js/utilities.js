@@ -46,11 +46,11 @@ function donateCalcAndAddHistory(input, accountBalance, donationBalance, id1, id
 function donateAddToHistory(donateAmount, donateText) {
     const date = new Date();
     const div = document.createElement('div');
-    div.classList.add('p-8', 'border', 'rounded-xl');
+    div.classList.add('p-8', 'border', 'rounded-xl', 'mb-8');
     div.innerHTML =
         `
          <h2 class="text-xl font-bold">${donateAmount} ${donateText.innerText}</h2>
-        <h3 class="font-light mt-4">${date.toString()}</h3>
+         <h3 class="font-light mt-4">${date.toString()}</h3>
     `
     document.getElementById("history-section").appendChild(div);
     console.log(div)
